@@ -1,5 +1,9 @@
 @charset "UTF-8";
 body{
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 4500px;
+    max-height: 4000px;
     background-image: url(imagens/fundo002.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -7,9 +11,10 @@ background: red imagens\fundo002jpg center center no-repeat ;
 margin: 0px;
 }
 p{
-font-size: 25px;
+font-size: 22px;
 color: white;
 text-shadow: 0px 1px 5px black;
+font-variant: inherit;
 }
 h2{
 font-size: 50px;
@@ -32,6 +37,12 @@ header h1{
     font-size: 60px;
 text-align: center;
 margin-top: 0px;
+text-decoration: underline;
+block-size: 65px;
+}
+header h1:hover{
+font-size: 55px;
+color: rgba(87, 0, 0, 0.689);
 }
 
 main article.q1 h2{
@@ -47,15 +58,21 @@ background-image: url(imagens/fundo001.jpg);
     background-size: cover;
     background-attachment: fixed;
 background: red imagens\fundo001jpg center center no-repeat;
+max-block-size: 700px;
+min-block-size: 150px;
 }
 article.q1 img{
-min-width: 400px;
-min-height: 400px;
+min-width: 100px;
+min-height: 100px;
 max-width: 500px;
 max-height: 500px;
 padding-left: 70%;
 margin: 10px;
 padding: 10px;
+}
+article.q1 img:hover{
+block-size: 250px;
+opacity: 70%;
 }
 article.q2{
 background-image: url(imagens/fundo003.jpg);
@@ -71,8 +88,10 @@ background-color: black;
 box-shadow: 0px 0px 6px wheat;
 }
 article.q3 img{
-max-width: 300px;
-max-height: 300px;
+max-width: 400px;
+max-height: 400px;
+min-height: 100px;
+min-width: 150px;
 }
 
 footer{
